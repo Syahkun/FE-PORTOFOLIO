@@ -31,21 +31,33 @@ const DetailProduct = (props) => {
                   </div>
                 </div>
                 <ul className="preview-thumbnail nav nav-tabs">
-                  <li className="active">
+                  {props.product.gambar ? (
+                    <li className="active">
+                      <img src={props.product.gambar} alt="..." />
+                    </li>
+                  ) : (
+                    <div className=""></div>
+                  )}
+                  {props.product.gambar1 ? (
+                    <li className="active">
+                      <img src={props.product.gambar1} alt="..." />
+                    </li>
+                  ) : (
+                    <div className=""></div>
+                  )}
+                  {props.product.gambar2 ? (
+                    <li className="active">
+                      <img src={props.product.gambar2} alt="..." />
+                    </li>
+                  ) : (
+                    <div className=""></div>
+                  )}
+                  {/* <li>
                     <img src="http://placekitten.com/200/126" alt="..." />
                   </li>
                   <li>
                     <img src="http://placekitten.com/200/126" alt="..." />
-                  </li>
-                  <li>
-                    <img src="http://placekitten.com/200/126" alt="..." />
-                  </li>
-                  <li>
-                    <img src="http://placekitten.com/200/126" alt="..." />
-                  </li>
-                  <li>
-                    <img src="http://placekitten.com/200/126" alt="..." />
-                  </li>
+                  </li> */}
                 </ul>
               </div>
               <div className="details col-md-6">
@@ -109,7 +121,7 @@ const DetailProduct = (props) => {
 
                 <div className="action">
                   <button
-                    className="add-to-cart btn btn-default"
+                    className="add-to-cart btn btn-default mr-3"
                     type="button"
                     onClick={() =>
                       props.postTransaction(props.product.id, 1, 1, 1)

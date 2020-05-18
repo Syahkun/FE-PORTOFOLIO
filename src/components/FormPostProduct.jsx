@@ -32,14 +32,12 @@ const FormProduct = (props) => {
               /> */}
             </div>
             <div className="d-flex justify-content-center my-5 login-heading mb-4">
-              <a class="navbar-brand" href="#">
-                <Link to="/">
-                  <img
-                    src={require("../images/logo-new.png")}
-                    alt="L A N T E R N"
-                  />
-                </Link>
-              </a>
+              <Link to="/">
+                <img
+                  src={require("../images/logo-new.png")}
+                  alt="L A N T E R N"
+                />
+              </Link>
             </div>
             <div className="form-label-group">
               <input

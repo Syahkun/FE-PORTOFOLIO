@@ -16,9 +16,9 @@ const Carousel = () => {
           Olantern.com, Oleanjuga mempunyai toko offline di beberapa kota.
         </p>
         <p class="lead">
-          <a class="btn btn-primary btn-lg" href="#" role="button">
+          <i class="btn btn-primary btn-lg" href="#" role="button">
             Learn more
-          </a>
+          </i>
         </p>
       </div>
     </div>

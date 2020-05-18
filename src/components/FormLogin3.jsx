@@ -66,7 +66,7 @@ const FormLogin = (props) => {
                     </div>
                     <Link to="/profil-pengguna">
                       <button
-                        className="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2"
+                        className="btn btn-lg  btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2"
                         type="submit"
                         onClick={() => postLogin()}
                       >
@@ -74,9 +74,9 @@ const FormLogin = (props) => {
                       </button>
                     </Link>
                     <div className="text-center">
-                      <a className="small" href="#">
+                      <i className="small" href="#">
                         Forgot password?
-                      </a>
+                      </i>
                     </div>
                   </form>
                 </div>

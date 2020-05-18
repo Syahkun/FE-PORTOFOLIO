@@ -8,9 +8,9 @@ export const postTransaction = (
   shipping_method_id,
   payment_method_id
 ) => {
-  alert("blm masuk post transaksi");
+  // alert("blm masuk post transaksi");
   return async (dispatch) => {
-    alert("masuk post transaksi");
+    // alert("masuk post transaksi");
     // const product_id_transaction = product_id;
     // const qty_transaction = qty;
     // const shipping_method_id_transaction = shipping_method_id;
@@ -34,7 +34,7 @@ export const postTransaction = (
 
 export const getTransaksi = () => {
   return async (dispatch, getState) => {
-    alert("masuk get transactions");
+    // alert("masuk get transactions");
     const token = localStorage.getItem("token");
     await axios
       .get(baseUrl + "/keranjang", {
@@ -52,14 +52,23 @@ export const getTransaksi = () => {
   };
 };
 
-// export const deleteTransaksi = () => {
-//   return async (dispatch) => {
-//     const token = localStorage.getItem("token");
-//     await axios
-//     .delete(baseUrl + "/keranjang")
-
-//   }
-// }
+export const deleteTransactions = (id) => {
+  return async (dispatch) => {
+    alert("masuk delete trasactions");
+    const token = localStorage.getItem("token");
+    await axios
+      .delete(baseUrl + "/keranjang/" + id, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      })
+      .then(async (response) => {
+        dispatch({
+          type: "DELETE_TRANSACTIONS",
+        });
+      });
+  };
+};
 
 export const changeInputTransaction = (el) => {
   return { type: "CHANGE_INPUT_TRANSACTION", payload: el };

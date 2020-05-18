@@ -27,6 +27,10 @@ export default function transactionRducer(
         cart: action.payload,
         is_loading: false,
       };
+    case "DELETE_TRANSACTIONS":
+      return {
+        ...stateTransactions,
+      };
     default:
       return stateTransactions;
   }

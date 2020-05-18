@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Header from "../components/Header2";
-import Footer from "../components/Footer";
+// import Header from "../components/Header2";
+// import Footer from "../components/Footer";
 import FormLogin from "../components/FormLogin3";
 // import { link } from "react-router-/dom";
 import { connect } from "react-redux";

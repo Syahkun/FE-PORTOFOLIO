@@ -55,7 +55,6 @@ class Home extends Component {
     return (
       <div className="">
         <Header />
-
         <div className="mx-3">
           <Carousel />
           <SlideBar

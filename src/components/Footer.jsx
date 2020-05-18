@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -8,9 +9,10 @@ const Footer = () => {
     >
       <div className="row ">
         <div className="col-sm-2 mx-auto my-auto">
-          <a className="navbar-brand" href="#">
+          <Link to="/">
             <img src={require("../images/logo-new.png")} alt="L A N T E R N" />
-          </a>
+          </Link>
+          <br className="" />
           Bekas baru boleh saja
         </div>
         <div className="col-sm-2 mx-auto my-auto ">

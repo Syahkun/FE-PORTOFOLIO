@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CartComp = (props) => {
   const humanize = require("humanize");
@@ -10,8 +11,8 @@ const CartComp = (props) => {
           <div className="container-fliud">
             <div className="wrapper row">
               <div className="details col-md-12">
-                <h3 className="product-title">DAFTAR BELANJAANMU</h3>
-                <div className="rating">
+                <h3 className="product-title">DAFTAR BELANJA</h3>
+                {/* <div className="rating">
                   <div className="stars">
                     <span className="fa fa-star checked"></span>
                     <span className="fa fa-star checked"></span>
@@ -20,11 +21,12 @@ const CartComp = (props) => {
                     <span className="fa fa-star"></span>
                   </div>
                   <span className="review-no">41 reviews</span>
-                </div>
+                </div> */}
                 <p className="product-description">
-                  Suspendisse quos? Tempus cras iure temporibus? Eu laudantium
-                  cubilia sem sem! Repudiandae et! Massa senectus enim minim
-                  sociosqu delectus posuere.
+                  Berbelanja barang-barang baru memang dapat menjadi kegiatan
+                  yang menyenangkan bagi sebagian orang. Tentunya akan lebih
+                  menyenangkan jika kegiatan belanja tersebut tidak merugikan
+                  Anda dengan menghabiskan banyak penghasilan Anda
                 </p>
                 <h4 className="price">
                   Total Harga:Rp &nbsp;
@@ -34,10 +36,10 @@ const CartComp = (props) => {
                   Total Produk: {props.cart.total_qty}
                   <span> </span>
                 </h4>
-                <p className="vote">
+                {/* <p className="vote">
                   <strong>91%</strong> of buyers enjoyed this product!{" "}
                   <strong>(87 votes)</strong>
-                </p>
+                </p> */}
                 <h5 className="sizes">
                   Metode Pembayaran:{props.cart.shipping_method_id}
                 </h5>
@@ -54,12 +56,18 @@ const CartComp = (props) => {
                 </h5>
 
                 <div className="action">
-                  <button className="add-to-cart btn btn-default" type="button">
-                    Selesaikan Pembayaran
+                  <button className="like btn btn-default mr-2" type="button">
+                    Selesaikan Pembayaran Anda
                   </button>
-                  <button className="like btn btn-default" type="button">
-                    <span className="fa fa-heart"></span>
-                  </button>
+                  <Link to="/">
+                    <button
+                      className="add-to-cart btn btn-default"
+                      type="button"
+                      onClick={() => props.deleteTransactions(props.cart.id)}
+                    >
+                      Delete
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

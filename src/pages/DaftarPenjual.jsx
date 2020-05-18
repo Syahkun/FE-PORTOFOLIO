@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+// import Header from "../components/Header";
+// import Footer from "../components/Footer";
 import FormPenjual from "../components/FormPenjual";
 // import FormLogin from "../components/FormLogin";
 
