@@ -21,27 +21,27 @@ const slideBar = (props) => {
           {" "}
           <Link to="/laptop">
             <i
-              value={4}
+              value={1}
               className="fa fa-laptop"
-              onClick={() => changeRouter(4)}
+              onClick={() => changeRouter(1)}
             ></i>
           </Link>
         </p>
         <p>
           <Link to="/televisi">
             <i
-              value={3}
+              value={2}
               className="fa fa-television"
-              onClick={() => changeRouter(3)}
+              onClick={() => changeRouter(2)}
             ></i>
           </Link>
         </p>
         <p href="#">
           <Link to="/headset">
             <i
-              value={5}
+              value={4}
               className="fa fa-headphones"
-              onClick={() => changeRouter(5)}
+              onClick={() => changeRouter(4)}
             ></i>
           </Link>
         </p>
@@ -49,9 +49,9 @@ const slideBar = (props) => {
           {" "}
           <Link to="/headphone">
             <i
-              value={6}
+              value={3}
               className="fa  fa-mobile "
-              onClick={() => changeRouter(6)}
+              onClick={() => changeRouter(3)}
             ></i>{" "}
           </Link>
         </p>
