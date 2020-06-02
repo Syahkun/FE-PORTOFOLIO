@@ -54,7 +54,7 @@ export const getTransaksi = () => {
 
 export const deleteTransactions = (id) => {
   return async (dispatch) => {
-    alert("masuk delete trasactions");
+    // alert("masuk delete trasactions");
     const token = localStorage.getItem("token");
     await axios
       .delete(baseUrl + "/keranjang/" + id, {

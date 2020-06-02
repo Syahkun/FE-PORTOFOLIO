@@ -88,9 +88,9 @@ export const getListProducts = () => {
 };
 
 export const getListProductsCategory = (category) => {
-  alert("belum masuk kategori");
+  // alert("belum masuk kategori");
   return async (dispatch) => {
-    alert("masuk kategori");
+    // alert("masuk kategori");
     await dispatch({ type: "ACTIVATE_LOADING" });
     await axios
       .get(baseUrl + "/produk")
@@ -111,9 +111,9 @@ export const getListProductsCategory = (category) => {
 };
 
 export const getListProductsById = (id) => {
-  alert("belum masuk id");
+  // alert("belum masuk id");
   return async (dispatch) => {
-    alert("masuk id");
+    // alert("masuk id");
     await dispatch({ type: "ACTIVATE_LOADING" });
     await axios
       .get(baseUrl + "/produk/" + id)

@@ -32,9 +32,9 @@ export const doLogin = (props) => {
 };
 
 export const postPengguna = (props) => {
-  alert("belum masuk");
+  // alert("belum masuk");
   return async (dispatch, getState) => {
-    alert("sudah masuk");
+    // alert("sudah masuk");
     const status = getState().user.status;
     const bodyRequest = {
       nama_pengguna: getState().user.namaPengguna1,
@@ -61,9 +61,9 @@ export const postPengguna = (props) => {
 //===========================getpenjual===================================
 
 export const postPenjual = () => {
-  alert("belum masuk form penjual");
+  // alert("belum masuk form penjual");
   return async (dispatch, getState) => {
-    alert("sudah masuk form penjual");
+    // alert("sudah masuk form penjual");
     const namaPenjual = getState().user.namaPenjual;
     const emailPenjual = getState().user.emailPenjual;
     const inputProvinsiPenjual = getState().user.inputProvinsiPenjual;
@@ -115,9 +115,9 @@ export const postPenjual = () => {
 
 export const getPenjual = (props) => {
   const token = localStorage.getItem("token");
-  alert("belum masuk");
+  // alert("belum masuk");
   return async (dispatch, getState) => {
-    alert("sudah masuk");
+    // alert("sudah masuk");
     await axios
       .get(baseUrl + "/penjual/profile", {
         headers: {
