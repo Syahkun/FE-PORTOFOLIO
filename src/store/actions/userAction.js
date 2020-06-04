@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = "http://0.0.0.0:5000";
+const baseUrl = "https://reak_be.olantern.xyz";
 
 //===========================postpengguna&dologin===================================
 
